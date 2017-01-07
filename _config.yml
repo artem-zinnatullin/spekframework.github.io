@@ -16,14 +16,15 @@
 title: Spek
 tagline: Specification Framework for Kotlin
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+githubRepo: https://github.com/JetBrains/spek
 
 # Build settings
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 
-gems:
-  - jekyll-feed
+kramdown:
+  input: GFM
+
 exclude:
   - Gemfile
   - Gemfile.lock

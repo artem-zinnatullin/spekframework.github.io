@@ -1,0 +1,10 @@
+language: ruby
+sudo: false
+rvm: 2.2.0
+script: bundle exec rake deploy
+branches:
+  only:
+  - gh-pages
+env:
+  global:
+    secure: YzmpdBq5CMbLqRGJU02XdG7K0WjS9FjqXb2dvPKzYHy/yhi9YFsgDfd7pjRtIPPCea8kt/sTi9k8lJPEycClu63k18qnqrvDfbAb1Sev7dB7BsJC7BQ+EFoitwkexyVQlQkB8HWbZl7OnfTIVJmlmpyPjvSZabL88XPkulHZH5fhVo2hDAxMzs8UJTQ90MdZ3pHALrosyjT+OfO/t9KQqcQ/JQNFC1+hE1TTzTEVZNCi+iB96ADUlI0UTEbGItEm12ccKCzixG2bdEzaRhchZQOnEwoJbG6qx7ZVgUmnc9X10Lb12Q/PSyR5a+xYdYLyghnKgBIiPRQxqY50+Kwu/8OzMshzSY5fAriV3XXfa0Pu8tB9s6946+PxhhHOhnheoKvTfli5vHpv0sKUPArhmuHns62quZTIxHX2zarEsYqgqnkahPSOeV0aN3T0HGLMPbCNIcTjmg1ND2frTSrr3tKPi+UgPtAIR3XRMyu5ovk6EYeVQ/brUJAiBFx/7ydJSJ8WMLQXwgUp5YGR/DH74rplWgFtCd6timRKrXQTingU7Pmvallsh1TMrG7HZP0AwGBgd/xM/VLzV+M8Yjd8OXCikiZwRdsQ1yjP07OgZ4zWZYJGrso70wDX51VRoGaPHwtTNBQhq9xpF6fBLK5vkSgNS6LZc+Fol1avfYt7tpQ=
