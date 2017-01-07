@@ -19,8 +19,14 @@
         <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Docs <span class="caret"></span></a>
             <ul class="dropdown-menu">
-                <li><a href="#">Latest</a></li>
-                <li><a href="#">1.0.0</a></li>
+                {% assign versions = site.data.versions | sort: 'version' %}
+                {% for version in versions %}
+                    <li>
+                        <a href="{{ site.baseurl }}/docs/{{ version.name }}/">
+                            {{ version.name }}
+                        </a>
+                    </li>
+                {% endfor %}
             </ul>
         </li>
         <li><a href="{{ site.githubRepo }}">Contribute</a></li>
