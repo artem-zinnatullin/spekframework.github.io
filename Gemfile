@@ -1,9 +1,7 @@
 source "https://rubygems.org"
-ruby RUBY_VERSION
+ruby 2.3
 
-gem "jekyll", "3.3.1"
-gem "rake"
-gem "rake-jekyll"
+gem 'github-pages', group: :jekyll_plugins
 
 # If you have any plugins, put them here!
 # group :jekyll_plugins do
