@@ -16,6 +16,8 @@
 title: Spek
 tagline: Specification Framework for Kotlin
 baseurl: "" # the subpath of your site, e.g. /blog
+github_url: https://github.com/JetBrains/spek
+repository: spekframework/spekframework.github.io
 
 # Build settings
 markdown: kramdown
@@ -24,8 +26,19 @@ highlighter: rouge
 kramdown:
   input: GFM
 
-gems:
-    - jekyll-github-metadata
+gems: ['jekyll-github-metadata']
+
+collections:
+  docs:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'docs'
+    values:
+      layout: 'docs'
 
 exclude:
   - Gemfile
