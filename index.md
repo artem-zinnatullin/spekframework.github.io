@@ -47,8 +47,11 @@ class SimpleTest : Spek({
 })
 ```
 
-## Tests are specifications
-Tests are executable specifications of your system. They are real-time compilable code that tell you how a piece of code should behave and under what conditions is a certain outcome expected. That is why it is important to be explicit, concise and unambiguous when it comes to defining specifications. Spek helps you do that.
+## Why Specifications instead of regular tests?
+
+* Specifications are more explicit, concise and unambiguous than regular (JUnit/etc) tests.
+* Specifications are real-time compilable code that tell you how a piece of code should behave and under what conditions is a certain outcome expected.
+* Specifications allow you define complex states of the system under the test avoiding code duplication while keeping both spec code and run reports human readable.
 
 ## Spek works with Java
 Spek is written in Kotlin and as such is 100% compatible with Java. You can write your specifications (notice we say specification, not test) in Kotlin and verify new or existing code written in Java or Kotlin.
